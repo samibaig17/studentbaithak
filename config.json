@@ -1,0 +1,19 @@
+{
+  "params":
+  {
+    "local_server":  "True",
+    "local_uri": "mysql+pymysql://root:/@localhost/studentbaithak",
+    "prod_uri": "mysql+pymysql://root:50aHygvVLt0~DN!w@localhost/studentbaithak",
+    "fb_uri": "https://www.facebook.com/Studentbaithak",
+    "copyright_tag":"StudentBaithak",
+    "gmail_username" :"samibaig08@gmail.com",
+    "gmail_pswd":"amanjarral123",
+    "about_text": "Hi My name is Sami and I help international student from all around the world to help them with their university application",
+    "nofpost": 3,
+    "login-img": "login.svg",
+    "admin":"root",
+    "paswd":"toor",
+    "upload-location": "//Users//mirzasamibaig//Documents//PycharmProjects//pythonProjects//lib//python3.6//site-packages/flaskapp/static/img"
+  }
+
+}
