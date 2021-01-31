@@ -1,4 +1,4 @@
-# Studentbaithak
+# Studentbaithak V.1.0 - Building the International Student Community 
 First FullStack Website with FLASK Framework
 Backend - Python
 Frontend - HTML CSS (Bootstrap)
