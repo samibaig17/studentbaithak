@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/home-bg.jpg') }}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Admin Panel</h1>
+            <span class="subheading">Manage Your Post</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        
+      <!-- TODO: Fetch it using for loop from the database --> 
+      <h1>Basic Actions</h1>
+      <a href="/edit/0"><button class="btn btn-primary">Add a new Post</button></a>
+      <a href="/logout"><button class="btn btn-primary">Logout</button></a>
+
+       <hr></hr> 
+       <!-- FILE UPLOADER FROM HERE -->
+      <h1>Upload a File</h1>
+      
+        <form action="/uploader" enctype="multipart/form-data" method="post">
+        
+        Please specify a file, or a set of files:<br>
+
+        <input type="file" name="file1" size="40">
+        
+        </p>
+
+        <div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+        
+        </div>
+        
+        </form>
+      
+      <hr></hr>
+
+      <!-- TILL HERE -->
+
+      <h1>Edit Post</h1>
+      <table class="table table-sm">
+  <thead>
+    <tr>
+      <th scope="col">postno</th>
+      <th scope="col">title</th>
+      <th scope="col">Date</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+
+    {% for post in posts %}
+    <tr>
+      <td>{{post.postno}}</td>
+      <td>{{post.title}}</td>
+      <td>{{post.date}}</td>
+      <td><a href="/edit/{{post.postno}}"><button class="btn btn-primary">Edit</button></td>
+      <td><a href="/delete/{{post.postno}}"><button class="btn btn-primary">Delete</button></a></td>
+    </tr>
+    
+    {% endfor %}
+
+  </tbody>
+</table>
+      
+
+
+        <!-- Pager -->
+        
+
+{% endblock %}

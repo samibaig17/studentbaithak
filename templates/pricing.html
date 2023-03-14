@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Clean Blog - Start Bootstrap Theme</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href= " {{ url_for('static', filename='css/clean-blog.min.css' ) }}" rel="stylesheet">
+
+  <!-- For this Template -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script>
+      Holder.addTheme('thumb', {
+        bg: '#55595c',
+        fg: '#eceeef',
+        text: 'Thumbnail'
+      });
+    </script>
+
+</head>
+
+<body>
+
+<!-- NAVBAR START -->
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="\">Student Baithak</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="\">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="\about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pricing">Pricing</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="/appointment">Let Me Help You</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- NAVBAR ENDS -->
+
+<div class="p-3 mb-2 text-white" style="background-image: url('{{ url_for('static', filename='img/post-bg.jpg') }}')">
+
+
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center my-5">
+          <h1 class="display-4">Pricing</h1>
+          <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
+        </div>
+
+        <div class="container">
+          <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 box-shadow">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal ">Free</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$75 <h6 class="text-muted"> One Time Charged</h6></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>10 users included</li>
+                  <li>2 GB of storage</li>
+                  <li>Email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+              </div>
+            </div>
+            <div class="card mb-4 box-shadow">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Pro</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$100 <h6 class="text-muted">One Time Charged</h6></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>20 users included</li>
+                  <li>10 GB of storage</li>
+                  <li>Priority email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+              </div>
+            </div>
+              <!--
+            <div class="card mb-4 box-shadow">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Enterprise</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>30 users included</li>
+                  <li>15 GB of storage</li>
+                  <li>Phone and email support</li>
+                  <li>Help center access</li>
+                </ul>
+                <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+              </div>
+            </div>
+            -->
+          </div>
+
+          </div>
+        </div>
+      <hr style="border top:0px;">
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#" target="blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="{{params['fb_uri']}}" target="blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" target="blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Studentbaithak 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
